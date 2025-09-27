@@ -42,7 +42,7 @@ function Promt() {
     try {
       const token = localStorage.getItem("token");
       const { data } = await axios.post(
-        "http://localhost:4002/api/v1/deepseekai/promt",
+        "https://deekseek-clone-vercel-backend.vercel.app/",
         { content: trimmed },
         { headers: { Authorization: `Bearer ${token}` }, withCredentials: true }
       );
